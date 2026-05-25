@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martina Pagan Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css links
+  -->
+  <!-- <link id="theme-link" rel="stylesheet" href="./assets/css/darkmode.css"> -->
+  <link id="theme-link" rel="stylesheet" href="./assets/css/lightmode.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Add Font Awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+  <button id="mode-toggle" class="mode-toggle">
+    <i id="mode-icon" class="fas fa-sun"></i> <!-- Initial icon for light mode -->
+  </button>
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/FotoProfilo.jpg" alt="Martina Pagan" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Martina Pagan">Martina Pagan</h1>
+          <p class="title">MSc in Analytics and Data Science for Economics and Management</p>
+        </div>
+
+        <button style="background: white; color: black;" class="info_more-btn" data-sidebar-btn>
+          <span style="background: white; color: black;">Show Contacts</span>
+          <ion-icon style="background: white; color: black;" name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <a href="mailto:martina.pagan@outlook.it" class="contact-link">martina.pagan@outlook.it</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <a href="tel:+393454487200" class="contact-link">+39 3454487200</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <address>Grumello del Monte (BG, Italy)</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/martina-pagan-597694268/" class="social-link">
+              <ion-icon name="logo-linkedin" class="ion-2"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/martinapagan" class="social-link">
+              <ion-icon name="logo-github" class="ion-2"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR (Aggiornata rimuovendo Research, Blog e Books)
+      -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Development</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I earned a Master’s degree in Analytics and Data Science for Economics and Management from the University of Brescia with honors. My studies focused on data-driven decision-making and process optimization using Python, R, and SQL, areas for which I have a strong passion.
+          </p>
+          <br>
+          <p>
+            I am a determined person, characterized by a marked attention to detail and a proactive approach to learning and continuous improvement. I am constantly seeking new challenges that allow me to push myself and grow professionally.
+          </p>
+          <br>
+          <p>
+            In my free time, I like to stay active, especially through aerial silks and skiing.
+          </p>
+        </section>
+
+        <!--
+          - #CONTACT
+        -->
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <ul class="social-list" style="justify-content: flex-start; gap: 15px; margin-bottom: 20px;">
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/martina-pagan-597694268/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="mailto:martina.pagan@outlook.it" class="contact-link">
+                <ion-icon name="mail"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Brescia</h4>
+              <span>2023 — 2026</span>
+              <p class="timeline-text">
+                Analytics and Data Science for Economics and Management - Graduated with Honors
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Bergamo</h4>
+              <span>2019 — 2022</span>
+              <p class="timeline-text">Economics</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My Skills</h3>
+          <div class="skills-list content-card">
+            <div class="skills-column">
+              <h4 class="h4">Technical Skills</h4>
+              <ul>
+                <li>Python, R, SQL</li>
+                <li>Data Visualization</li>
+                <li>Machine Learning & AI</li>
+                <li>Microsoft Office</li>
+                <li>Problem Optimization</li>
+              </ul>
+            </div>
+
+
+            
+            <div class="skills-column">
+              <h4 class="h4">Soft Skills</h4>
+              <ul>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Continuous Learning</li>
+                <li>Adaptability</li>
+                <li>Attention to Detail</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <div style="margin-top: 30px;">
+          <a href="./assets/files/Martina_Pagan_CV_en.pdf" download class="form-btn" style="display: inline-flex; align-items: center; gap: 10px;">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+      </article>
+
+      <!--
+        - #DEVELOPMENT (PROJECTS)
+      -->
+      <article class="development" data-page="development">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Regression Project</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Classification Project</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Causal Inference Project</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" style="background: white; color: black;" data-select>
+              <div class="select-value" data-select-value style="background: white; color: black;">Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list" style="background: white; color: black;">
+              <li class="select-item">
+                <button data-select-item style="background: white; color: black;">All</button>
+              </li>
+              <li class="select-item">
+                <button style="background: white; color: black;" data-select-item>Regression Project</button>
+              </li>
+              <li class="select-item">
+                <button style="background: white; color: black;" data-select-item>Classification Project</button>
+              </li>
+              <li class="select-item">
+                <button style="background: white; color: black;" data-select-item>Causal Inference Project</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="Classification Project">
+              <a href="https://github.com/martinapagan/detection-non-authentic-scientific-papers">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/human-ai-touch-connection-technology-innovation_23-2152000862.avif" alt="smartsl" loading="lazy">
+                </figure>
+                <h3 class="project-title">Detection of Non Authentic Scientific Papers</h3>
+                <p class="project-category">Classification Project</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="category 1">
+              <a href="https://github.com/shashperera/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/primeo.png" alt="github" loading="lazy">
+                </figure>
+                <h3 class="project-title">PrimeO</h3>
+                <p class="project-category">Category 1</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="category 1">
+              <a href="https://github.com/shashperera/MonthlyExpenseTracker">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project1expense.png" alt="expense" loading="lazy">
+                </figure>
+                <h3 class="project-title">Expense Tracker</h3>
+                <p class="project-category">Category 1</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="category 2">
+              <a href="https://ieeexplore.ieee.org/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/research.jpg" alt="icacpaper" loading="lazy">
+                </figure>
+                <h3 class="project-title">Conference</h3>
+                <p class="project-category">Category 2</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
